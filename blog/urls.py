@@ -6,6 +6,7 @@ from . import views
 # NOTE 패턴은 위에서부터 체크하기 때문에, 위부터 특별한 케이스를 넣어라.
 urlpatterns = [
     path('<int:pk>/', views.PostDetail.as_view()),
+    # path('<category/<str:slug>/', views.Category.),
     # path('<int:pk>/', views.views_single_page),
     # path('', views.index),
     path('', views.PostList.as_view()),
